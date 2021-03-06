@@ -22,6 +22,7 @@
     box-shadow: 0 5px 10px 0 rgba(135, 207, 235, 0.35);
     overflow: hidden;
     border-bottom: 4px solid rgb(255, 123, 123);
+    transition: all .5s;
 }
 
 .we_packages__package .packages__packageHeader {
@@ -34,6 +35,11 @@
 .we_packages__package .packages__packageHeader img {
     width: 100%;
     height: 100%;
+    transition: all .5s;
+    
+}
+.we_packages .packages__packageHeader:hover img {
+    transform: scale(1.1);
 }
 
 .we_packages__package .packages__packageHeaderTitle {
@@ -70,7 +76,7 @@
 	background: rgba(0,0,0,.4);
 	padding: .3rem;
 	border-radius: 3px;
-	width: 80%;
+	width: 90%;
 	box-shadow: 0 0 10px 0 white;
 }
 
