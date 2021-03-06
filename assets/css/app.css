@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.we_packages .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 5rem;
+    width: 75%;
+    margin: 3rem auto;
+}
+
+.we_packages__package {
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(135, 207, 235, 0.35);
+    overflow: hidden;
+    border-bottom: 4px solid rgb(255, 123, 123);
+}
+
+.we_packages__package .packages__packageHeader {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+.we_packages__package .packages__packageHeader img {
+    width: 100%;
+    height: 100%;
+}
+
+.we_packages__package .packages__packageHeaderTitle {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	font-size: .8rem;
+	font-weight: 500;
+	background: rgba(0,0,0,0.3);
+	padding: .2rem .5rem;
+	border-radius: 3px;
+	color: white;
+	box-shadow: 0 0 10px 0 white;
+}
+
+.we_packages__package .packages__packageHeaderFeatured {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	background: #FFCE31;
+	font-weight: 500;
+	padding: .2rem 1rem;
+	font-size: .9rem;
+	border-radius: 5px;
+}
+
+.we_packages__package .packages__packageHeaderWishlist {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+
+.we_packages__package .packages__packageHeaderWishlist img {
+	background: rgba(0,0,0,.4);
+	padding: .3rem;
+	border-radius: 3px;
+	width: 80%;
+	box-shadow: 0 0 10px 0 white;
+}
+
+.we_packages .packages__packageBody {
+	padding: 1rem 2rem;
+}
+
+.we_packages .packages__packageBody a {
+    text-decoration: none;
+    color: black;
+}
+
+.we_packages .packages__packageBody h3 {
+	margin-top: 1rem;
+	margin-bottom: .35rem;
+	font-weight: 500;
+}
+
+.we_packages .packages__packageBody a + p {
+    color: #ccc;
+    font-size: .95rem;
+}
+
+
+.packages__packageBodyLocation a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 1.2rem 0;
+    color: #111;
+}
+
+.packages__packageBodyLocation a p {
+    margin-left: .75rem;
+    font-weight: 500;
+}
+
+/* responsive starts from here */
+
+
+
+@media (min-width: 300px) and (max-width: 600px){
+    .we_packages .container {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        width: 80%;
+        margin: 3rem auto;
+    }
+    .we_packages__package {
+        min-width: unset;
+    }
+    .we_packages__package .packages__packageHeaderTitle {
+        font-size: .7rem;
+    }
+    .we_packages__package .packages__packageHeaderFeatured {
+        padding: .2rem .5rem;
+        font-size: .7rem;
+    }
+    .we_packages .packages__packageBody h3 {
+        margin-top: .2rem;
+        margin-bottom: .35rem;
+        font-size: .95rem;
+    }
+    .we_packages .packages__packageBody h3 + p {
+        color: #ccc;
+        font-size: .85rem;
+    }
+    .packages__packageBodyLocation img {
+        width: 4.5%;
+    }
+    .packages__packageBodyLocation a p {
+        font-size: .9rem;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 1200px){
+    .we_packages .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        width: 80%;
+        margin: 3rem auto;
+    }
+    .we_packages__package {
+        min-width: unset;
+    }
+    .we_packages__package .packages__packageHeader {
+        height: 250px;
+    }
+    .we_packages .packages__packageBody {
+        padding: 1rem 1.5rem;
+    }
+    .we_packages__package .packages__packageHeaderFeatured {
+        padding: .2rem .5rem;
+        font-size: .75rem;
+    }
+    .we_packages .packages__packageBody h3 {
+        font-size: .95rem;
+    }
+    .we_packages .packages__packageBody h3 + p {
+        font-size: .8rem;
+    }
+    .packages__packageBodyLocation a p {
+        font-size: .9rem;
+    }
+    .packages__packageBodyLocation img {
+        width: 7%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .we_packages .container {
+        grid-gap: 2rem;
+        width: 80%;
+        margin: 3rem auto;
+    }
+}
+@media screen and (min-width: 1600px){
+    .we_packages .container {
+        grid-gap: 5rem;
+        width: 75%;
+        margin: 3rem auto;
+    }
+}
