@@ -39,7 +39,7 @@
     
 }
 .we_packages .packages__packageHeader:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .we_packages__package .packages__packageHeaderTitle {
